@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  background: radial-gradient(rgba(0,0,0), rgba(69,3,100));
+  overflow: hidden;
+}
+::selection{
+  background: rgba(69,3,100);
+}
+.container{
+  max-width: 440px;
+  padding: 0 25px;
+  border:1px;
+  margin: 10px;
+}
+.loginwrapper{
+  width: 440px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px 1px rgba(0,0,0,0.1);
+  border: 3px;
+  border-color: black;
+}
+.loginwrapper .title{
+  height: 90px;
+  background: rgb(165, 5, 240);
+  border-radius: 5px 5px 0 0;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginwrapper form{
+  padding: 30px 25px 25px 25px;
+}
+.loginwrapper form .row{
+  height: 45px;
+  margin-bottom: 15px;
+  position: relative;
+}
+.loginwrapper form .row input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding-left: 60px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+form .row input:focus{
+  border-color: rgb(165, 5, 240);
+  box-shadow: inset 0px 0px 2px 2px rgba(69,3,100);
+}
+form .row input::placeholder{
+  color: #999;
+}
+.loginwrapper form .row i{
+  position: absolute;
+  width: 47px;
+  height: 100%;
+  color: #fff;
+  font-size: 18px;
+  background: rgb(165, 5, 240);
+  border: 1px solid rgb(165, 5, 240);
+  border-radius: 5px 0 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loginwrapper form .pass{
+  margin: -8px 0 20px 0;
+}
+.loginwrapper form .pass a{
+  color: rgb(165, 5, 240);
+  font-size: 17px;
+  text-decoration: none;
+}
+.loginwrapper form .pass a:hover{
+  text-decoration: underline;
+}
+.loginwrapper form .button input{
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  padding-left: 0px;
+  background: rgb(165, 5, 240);
+  border: 1px solid rgb(165, 5, 240);
+  cursor: pointer;
+}
+form .button input:hover{
+  background: rgba(69,3,100);
+}
+.loginwrapper form .signup-link{
+  text-align: center;
+  margin-top: 20px;
+  font-size: 17px;
+}
+.loginwrapper form .signup-link a{
+  color: rgb(165, 5, 240);
+  text-decoration: none;
+}
+form .signup-link a:hover{
+  text-decoration: underline;
+}

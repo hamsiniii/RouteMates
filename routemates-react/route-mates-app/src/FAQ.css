@@ -1,0 +1,75 @@
+/* FAQComponent.css */
+
+.faq {
+    max-width: 900px;
+    margin: 10px auto;
+    padding: 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .faq-header {
+    background-color: #571B7E;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .question {
+    cursor: pointer;
+    padding: 20px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 10px 0 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .question::before {
+    margin-right: 10px;
+  }
+  
+  .answer {
+    display: none;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 10px 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  .answer.show {
+    display: block;
+  }
+  
+  .question:hover {
+    background-color: #d0d0d0;
+  }
+  
+  .faq-content {
+    max-height: 650px; /* Set a fixed height for the entire box */
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
+  
+  .answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+  }
+  
+  .answer.show {
+    max-height: 300px; /* Set the maximum height for the scrollable box */
+  }
+  
+  .answer-text {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 0;
+    overflow-y: auto; /* Enable vertical scrolling */
+  }
